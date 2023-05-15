@@ -1,6 +1,6 @@
 # About me
 
-<h2><a href="https://www.upwork.com/freelancers/~01f706acf47db4795c">UpWork</h2>
+<h2><a href="https://www.upwork.com/freelancers/~01f706acf47db4795c">UpWork</a></h2>
   I have spent around 2-3 last years coding and doing basic practices related to api requesting data (basic) and implementing in different enviroments like web pages or desktop programs (more pages) but this just at introductory level, i like to expand my knowledge and skills by working on more complex projects or websites, i could develop a react application (having an up-date host service) and use chat-gpt bug fixes releases to solve only version errors.
 
 * PROS: I like to code in javascript using light-weight environments and memory consumption, if the tasks where i am asinged does not fit to my abilities i would be motivated to explore and achieve my goals :)
@@ -45,5 +45,3 @@ Almost a litte part of my work i have dedicated to databases just a few small st
 
 ###### [Codecademy](https://www.codecademy.com/profiles/_hex0r)
   - Certificate course [PDF](https://github.com/dlprisco/dlprisco.github.io/blob/6f5bf33b1d238e56ea6e53e8d29ec6fedd09f087/assets/pdf/_hex0r's%20profile%20_%20Codecademy.pdf) 
-  
-  <br />
