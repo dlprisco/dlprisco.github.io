@@ -8,7 +8,7 @@
 * CONS: Not available for high-memory consumption tasks, just basic developer experience (beginner works and beginner algorithm optimization only brute force acceptable entrys) also i can't have a full interaction real streaming communication thanks you guys reading my request
   
 
-<h2><a href="https://www.linkedin.com/in/daniel-prisco-4b3965274/">Linkedin </h2>
+  <h2><a href="https://www.linkedin.com/in/daniel-prisco-4b3965274/">Linkedin</a> </h2>
 I have the ability/basic knowledge to develop programs and web applications to run them in the cloud in a simple way and I would like to work on large projects that involve different skills such as interface design, optimization and automation of different processes as much as if I were a back-end or front-end developer and thus gain more experience and knowledge to contact different companies.
   
  <br />
