@@ -1,5 +1,7 @@
 # Contact
 
-you can find me on Twitter as [@blikor_sqwt](https://twitter.com/blikor_sqwt) where i publish some unuseful stuff and memes...
+email address `danielprisco09@gmail.com`
 
-I have also a Linkedin profile [daniel-prisco-4b3965274](https://www.linkedin.com/in/daniel-prisco-4b3965274/) to have some customers relationship and recieve job offers.
+you can also find me on [Twitter](https://twitter.com/blikor_sqwt) where i publish some unuseful stuff and memes...
+
+i have also a Linkedin [Linkedin profile](https://www.linkedin.com/in/daniel-prisco-4b3965274/) to have some customers relationship and recieve job offers.
