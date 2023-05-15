@@ -44,6 +44,6 @@ Almost a litte part of my work i have dedicated to databases just a few small st
 ### Other references
 
 ###### [Codecademy](https://www.codecademy.com/profiles/_hex0r)
-  - Certificate course <a href="http://dlprisco.github.io/assets/pdf/_hex0r's profile _ Codecademy.pdf">Download PDF</a>.</p> 
+  - Certificate course [PDF](https://github.com/dlprisco/dlprisco.github.io/blob/6f5bf33b1d238e56ea6e53e8d29ec6fedd09f087/assets/pdf/_hex0r's%20profile%20_%20Codecademy.pdf) 
   
   <br />
