@@ -22,8 +22,8 @@
   alt="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
   title="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
   </li>
-  <li> <a href="https://www.codewars.com/users/hexorhex">codewars <br /> <img style="width: 300px;" className="imgembed" alt="media-source" src="https://www.codewars.com/users/hexorhex/badges/micro"/></li>
-  
+  <li> <a href="https://www.codewars.com/users/hexorhex">codewars <br /> <img style="width: 300px;" className="imgembed" alt="media-source" src="https://www.codewars.com/users/hexorhex/badges/micro"/></a>
+  </li>
 </or>
   
 <br />
