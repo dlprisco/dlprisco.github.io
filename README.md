@@ -22,10 +22,8 @@
   alt="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
   title="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
   </li>
-  
-  <br></br>
-
   <li> <a href="https://www.codewars.com/users/hexorhex">codewars <br /> <img style="width: 300px;" className="imgembed" alt="media-source" src="https://www.codewars.com/users/hexorhex/badges/micro"/></li>
+  
 </or>
   
 <br />
@@ -47,4 +45,5 @@
 ![daniel new image](dlprisco.png)
 
 ---
+
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
