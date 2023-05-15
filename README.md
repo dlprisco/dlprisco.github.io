@@ -1,4 +1,3 @@
-[#](#) 
 # Hello everyone!. My name is Daniel Prisco and this is my personal website.
 
 <br/>
@@ -9,7 +8,7 @@
 <br/>
 <hr />
 
-## Platforms I like to use:
+### Platforms I like to use:
 
 <or>
   <li>
@@ -29,8 +28,6 @@
 <hr />
 
 ### sections
-
-<br />
 
 - [about me](about)
 - [contact](contact)
