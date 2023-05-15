@@ -1,30 +1,44 @@
-#
-### Hello everyone!, my name is Daniel Prisco and this is my personal website.
+[#](#) 
+# Hello everyone!. My name is Daniel Prisco and this is my personal website.
 
 <br/>
 &nbsp;Here you will find different things related to my experience as a Software Developer.
+
 <br/>
-
-# Platforms I like to use:
-
-<br />
+<br/>
+<br/>
 <hr />
+
+## Platforms I like to use:
+
 <br />
 
-* <a href="https://stackoverflow.com/users/11717481">stackoverflow</a> <br />
+<or>
+  <li>
+    <a href="https://stackoverflow.com/users/11717481">stackoverflow</a> <br />
 <img className="imgembed"
   src="https://stackoverflow.com/users/flair/11717481.png"
   style="width: 300px;, height: 77px;"
   alt="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
   title="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
+  </li>
 
 
 <br />
 <br />
 
-* <a href="https://www.codewars.com/users/hexorhex">codewars <br /> <img style="width: 300px;" className="imgembed" alt="media-source" src="https://www.codewars.com/users/hexorhex/badges/micro"/>
+  <li>
+  <a href="https://www.codewars.com/users/hexorhex">codewars <br /> <img style="width: 300px;" className="imgembed" alt="media-source" src="https://www.codewars.com/users/hexorhex/badges/micro"/>
+    </li>
+</or>
   
 <br />
+<br />
+<br />
+<hr />
+
+### sections
+
 
 - [about me](about)
 - [contact](contact)
