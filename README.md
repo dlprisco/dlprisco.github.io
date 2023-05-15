@@ -11,8 +11,6 @@
 
 ## Platforms I like to use:
 
-<br />
-
 <or>
   <li>
     <a href="https://stackoverflow.com/users/11717481">stackoverflow</a> <br />
@@ -26,7 +24,6 @@
   </li>
 </or>
   
-<br />
 <br />
 <br />
 <hr />
