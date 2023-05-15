@@ -12,13 +12,12 @@
 <br />
 
 * <a href="https://stackoverflow.com/users/11717481">stackoverflow</a> <br />
-<a href="https://stackoverflow.com/users/11717481">
-  <img className="imgembed"
+<img className="imgembed"
   src="https://stackoverflow.com/users/flair/11717481.png"
-  style={{ width: "300px", height: "77px" }}
+  style="width: 300px;, height: 77px;"
   alt="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
   title="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
-</a>
+
 
 <br />
 <br />
