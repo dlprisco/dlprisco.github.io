@@ -1,10 +1,10 @@
-# What is the Red Star Operative System and how is compared to other Linux distributions?
+# How are different LINUX distros compared around the world?
 <br />
 <br />
 
 ![RED STAR OS DESKTOP SCREENSHOT](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/RedStarOS-2021-04-03-16-50-57.png/800px-RedStarOS-2021-04-03-16-50-57.png)
 
-(screenshot from Wikipedia article https://en.wikipedia.org/wiki/Red_Star_OS)
+(RED STAR Operative System Desktop screenshot from [Wikipedia article](https://en.wikipedia.org/wiki/Red_Star_OS))
 
 <br />
 <br />
@@ -17,10 +17,14 @@
 <hr />
 
 ### Political Influence - Educational
-Some government institutions establish different rules of use for their electrical/electronic equipment such as a specific operating system, let's say in this case a UNIX distro. For example, in some Hispanic (Latin-American) countries it is commonly used for the administrative sector or administrative sector of *technological tools* separated from another area directed to the public or social goods, for example Venezuela is characterized by using the Canaima operating system which is a stable project with a certain number of releases in its historical log of changes in versions (here are a couple of references https://web.archive.org/web/20150508143918/http://canaima.softwarelibre.gob.ve/descargas/canaima-popular/versiones/2.0, https://web.archive.org/web/20150603142516/http://canaima.softwarelibre.gob.ve/novedades/presentamos-la-segunda-version-candidate-of-canaima-popular-3.1-name-code-201cauyantepui201d)
+
+Some government institutions establish different rules of use for their electrical/electronic equipment such as a specific operating system, let's say in this case a UNIX distro. For example, in some Hispanic (Latin-American) countries it is commonly used for the administrative sector or administrative sector of *technological tools* separated from another area directed to the public or social goods, for example Venezuela is characterized by using the Canaima operating system which is a stable project with a certain number of releases in its historical log of changes in versions (here are a couple of references [web.archive.org/web/20150508143918/http://canaima.softwarelibre.gob.ve/descargas/canaima-popular/versiones/2.0](https://web.archive.org/web/20150508143918/http://canaima.softwarelibre.gob.ve/descargas/canaima-popular/versiones/2.0), [web.archive.org/web/20150603142516/http://canaima.softwarelibre.gob.ve/novedades/presentamos-la-segunda-version-candidate-of-canaima-popular-3.1-name-code-201cauyantepui201d](https://web.archive.org/web/20150603142516/http://canaima.softwarelibre.gob.ve/novedades/presentamos-la-segunda-version-candidate-of-canaima-popular-3.1-name-code-201cauyantepui201d))
+
+<br />
 
 ### Relationship with other distros
-To compare with other operating systems I have checked their position in the data table published by https://distrowatch.com/
+
+To compare with other operating systems I have checked their position in the data table published by [distrowatch](https://distrowatch.com/)
 
 <table>
 <tr><th colspan="3">Last 12 months</th></tr>
@@ -84,4 +88,4 @@ To compare with other operating systems I have checked their position in the dat
   
   <br />
   
-  I understand that maybe I have deviated a little from the title of the question since I hardly talk about the red star system but for that there is the direct link on the theory of the operating system, I think they should be related in different continents (Asia) and from *descending* and less complex way to the product that is used by students, companies and legal institutions.
+  I understand that maybe I have deviated a little from the title of the question since I hardly talk about the red star system but for that there is the direct link on the theory of the operating system, I think they should be related in different continents (**Asia**) and from *descending* and less complex way to the product that is used by students, companies and legal institutions.
