@@ -50,7 +50,7 @@ for more information, please check the [repository](https://github.com/dlprisco/
 
 <br />
 
-- ## Client Setup and Message Handling (Jan 20, 2023)
+- ### Client Setup and Message Handling (Jan 20, 2023)
 
 
 Basic Discord bot
