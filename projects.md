@@ -5,13 +5,12 @@ There are some github repositories where i have worked on but actually i don't h
 
 <br>
 
-<h1>Track climate data/h1>
+<h2>Collect climate data</h2>
 🌨️ Small website to monitoring local climate
 
 <br>
-
 <h3> Overview </h3>
-<a href="https://weather-inf.web.app">weather inf</a>, is made for tracking the weather information in your locality and some approximate details of this, such as the minimum temperature, pressure, wind speed, humidity, etc... The information is received through calls to the official API of <a href="http://openweathermap.org/">open-weather-map</a>, returned in JSON format and processed to be rendered directly in the web page.
+weather-inf is made for tracking information in your locality and some approximate details of this, such as the minimum temperature, pressure, wind speed, humidity, etc... The information is received through calls to the official API of <a href="http://openweathermap.org/">open-weather-map</a>, returned in JSON format and processed to be rendered directly in the web page.
 
 ### Data fetching
 &nbsp; To fetch current weather data from the server, is defined an asynchronous function and called from useEffect React hook to recieve a response in JSON format to unpack in the main page, you could check the parameters that are passed inside the fetch() call, i. e. **q=${city} &lat=${lat} &lon=${long}** where {city}, {lat}, {long} are one  of requiere's to proccess current weather.
