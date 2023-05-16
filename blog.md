@@ -1,3 +1,3 @@
 # Blog
 
-[post1](_posts/2023-05-15-what-is-the-red-star-operative-systtem?)
+- [How are different LINUX distros compared around the world?](/posts/Red_Star_OS)
