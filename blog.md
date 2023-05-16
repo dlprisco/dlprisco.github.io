@@ -1,7 +1,4 @@
 # Blog
 
-here are some related stuff to my youtube videos
-- video1 (add description)
-- video2 (add description)
-- video3 (add description)
-- video4 (add description)
+- [How are compared different LINUX distros around the world?](_posts/2023-05-15-what-is-the-red-star-operative-systtem)
+
