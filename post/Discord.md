@@ -4,6 +4,8 @@
 <br />
 
 - ### Currency Data Management (Feb 5, 2023)
+
+
 Video about displaying currency price data in a discord chat by using `discord.py` and `coinmarketcap-api` where i think the main focused content is how the data is
 procesed by using `request` to get a json formated string to be displayed on any chat by using a determined bot command, i mean the video could be resume to 
 a couple of code statements like:
@@ -49,7 +51,10 @@ for more information, please check the [repository](https://github.com/dlprisco/
 <br />
 
 - ## Client Setup and Message Handling (Jan 20, 2023)
+
+
 Basic Discord bot
+
 ```
 import discord
 
