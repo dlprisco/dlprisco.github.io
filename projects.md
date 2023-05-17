@@ -57,5 +57,3 @@ npm: <br>
 ### Bug report
 &nbsp; You can send me a message to my email with any suggestion or in case of error, you would help me a lot.
 
-[weather-21dbd](https://weather-21dbd.web.app)
-
