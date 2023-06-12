@@ -1,31 +1,6 @@
-//axios.get('pk.dff7a446bdbd1ca60308712ce0bdedd0')
-
-/*
-var nav = document.getElementById('nav-bar');
-
-var nav_container = document.createElement('div');
-var nav_containerl = document.createElement('ul');
-//nav_container.class = 'container'
-
-for (let i=0; i<5; i++) {
-	let nav_val = document.createElement('li');
-	nav_val.innerHTML = i;
-	nav_containerl.appendChild(nav_val);
-}
-
-nav_container.appendChild(nav_containerl)
-nav.appendChild(nav_container)
-
-*/
-
 const nameInput = document.querySelector("input");
 
-nameInput.addEventListener("input", () => {
-    //document.getElementById('text_search').innerHTML = nameInput.value;
-});
-
-
-const APIID = "5a706f4605511ea6ad2c06c7a71d60e2";
+const APIID = ${{ process.env.token }};
 
 var data = {}
 var lon = undefined;
