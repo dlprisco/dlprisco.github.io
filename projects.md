@@ -7,6 +7,7 @@
 
 <br>
 <h3> Overview </h3>
+
 [weather-inf](https://github.com/dlprisco/weather-inf) is made for tracking information in your locality and some approximate details of this, such as the minimum temperature, pressure, wind speed, humidity, etc... The information is received through calls to the official API of open-weather, returned in **`JSON`** format and processed to be rendered directly in the web page.
 
 ### Data fetching
@@ -56,5 +57,5 @@ npm: <br>
 
 [project](/projects/weather)
 
-<br/>
-<hr/>
+<br>
+<hr>
