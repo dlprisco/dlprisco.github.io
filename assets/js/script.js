@@ -49,7 +49,7 @@ function current_weather() {
     let t = document.createElement('h2');
     t.innerHTML = 'Current Weather'
     document.getElementById("main").appendChild(t)
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIID}&units=metric`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=5a706f4605511ea6ad2c06c7a71d60e2&units=metric`)
 	.then(function (response) {
 		current = response.data;
 		for (const key in current) {
