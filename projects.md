@@ -1,7 +1,4 @@
-# Projects (unmantained)
-
-There are some github repositories where i have worked on but actually i don't have touched anymore (just because lazyness):
-
+# Projects
 
 <br>
 
@@ -57,3 +54,4 @@ npm: <br>
 ### Bug report
 &nbsp; You can send me a message to my email with any suggestion or in case of error, you would help me a lot.
 
+[project](/projects/weather)
