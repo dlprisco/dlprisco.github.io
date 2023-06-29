@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6e76c5a34f3f50e9131549c206f05c620c4f96af">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Projects | Daniel website</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Projects" />
+<meta name="author" content="Daniel Prisco" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Bookmark this to keep an eye on my project updates!" />
+<meta property="og:description" content="Bookmark this to keep an eye on my project updates!" />
+<link rel="canonical" href="http://localhost:4000/projects.html" />
+<meta property="og:url" content="http://localhost:4000/projects.html" />
+<meta property="og:site_name" content="Daniel website" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Daniel Prisco"},"description":"Bookmark this to keep an eye on my project updates!","headline":"Projects","url":"http://localhost:4000/projects.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>Daniel website</h1>
+        </a>
+        <h2>Bookmark this to keep an eye on my project updates!</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/dlprisco/dlprisco.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="projects">Projects</h1>
+
+<p><br /></p>
+
+<h2>Collect climate data</h2>
+<p>🌨️ Small website to monitoring local climate</p>
+
+<p><br /></p>
+<h3> Overview </h3>
+<p><a href="https://github.com/dlprisco/weather-inf">weather-inf</a> is made for tracking information in your locality and some approximate details of this, such as the minimum temperature, pressure, wind speed, humidity, etc… The information is received through calls to the official API of <a href="http://openweathermap.org/">open-weather-map</a>, returned in JSON format and processed to be rendered directly in the web page.</p>
+
+<h3 id="data-fetching">Data fetching</h3>
+<p>  To fetch current weather data from the server, is defined an asynchronous function and called from useEffect React hook to recieve a response in JSON format to unpack in the main page, you could check the parameters that are passed inside the fetch() call, i. e. <strong>q=${city} &amp;lat=${lat} &amp;lon=${long}</strong> where {city}, {lat}, {long} are one  of requiere’s to proccess current weather.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// This gets called on every request
+async function fetchCurrentWeather(lat, long, city) {
+
+   // Fetch data from external API
+   const res = await fetch(`https://api.openweathermap.org/data/2.5/find?q=${city}&amp;lat=${lat}&amp;lon=${long}&amp;units=metric&amp;APPID=${APIID}`)
+                     .then(res =&gt; { return res.json()})
+                     .then(data =&gt; {
+                         const mappedData = {
+                           description: data.list[0].weather[0].description,
+                           temperature: data.list[0].main.temp,
+                           country:data.list[0].sys.country,
+                           city: data.list[0].name,
+                           condition: data.list[0].weather[0].main,
+                           feelsLike : data.list[0].main.feels_like,
+                           windKm: data.list[0].wind.speed * 3.6,
+                           clouds:data.list[0].clouds.all,
+                           pressure: data.list[0].main.pressure,
+                           humidity: data.list[0].main.humidity,
+                         }
+                     setWeatherData(mappedData);
+                     setLoading(false);
+        });
+}
+</code></pre></div></div>
+
+<h3 id="run-locally">Run locally</h3>
+<p>  To run this project locally it is necessary to install all the necessary dependencies, some of which may be missing and you will have to install manually on your computer.</p>
+
+<p>yarn: <br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn install
+...
+yarn start
+</code></pre></div></div>
+
+<p>npm: <br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
+...
+npm start
+</code></pre></div></div>
+
+<h3 id="bug-report">Bug report</h3>
+<p>  You can send me a message to my email with any suggestion or in case of error, you would help me a lot.</p>
+
+<p><a href="/projects/weather">project</a></p>
+
+      </section>
+    </div>
+  </body>
+</html>

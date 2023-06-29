@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-29T18:17:53-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Daniel website</title><subtitle>Bookmark this to keep an eye on my project updates!</subtitle><author><name>Daniel Prisco</name></author><entry><title type="html">What Is The Red Star Operative Systtem_</title><link href="http://localhost:4000/2023/05/15/what-is-the-red-star-operative-systtem_.html" rel="alternate" type="text/html" title="What Is The Red Star Operative Systtem_" /><published>2023-05-15T00:00:00-04:00</published><updated>2023-05-15T00:00:00-04:00</updated><id>http://localhost:4000/2023/05/15/what-is-the-red-star-operative-systtem_</id><content type="html" xml:base="http://localhost:4000/2023/05/15/what-is-the-red-star-operative-systtem_.html">&lt;h1 id=&quot;what-is-the-red-star-operative-system-and-how-is-compared-to-other-linux-distributions&quot;&gt;What is the Red Star Operative System and how is compared to other Linux distributions?&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/RedStarOS-2021-04-03-16-50-57.png/800px-RedStarOS-2021-04-03-16-50-57.png&quot; alt=&quot;RED STAR OS DESKTOP SCREENSHOT&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(screenshot from Wikipedia article https://en.wikipedia.org/wiki/Red_Star_OS)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt; Since I was a boy I have liked computers and different types of video games, portable, executables, installers, Crackable CD-S and especially those that are running in a cloud service that saves your progress and does not have any kind of Guardian restriction (which could act as parental control in some cases), this has led me to use different types of operating systems although I can verify that more than 70% of the time it has been some version of Windows. This is due to the limits to which I was exposed thanks to my little ability to understand the restrictions that the old Operating Systems (UNIX) that I used a long time ago had, since they prevented me from many options that people like me could easily have, How to simply download some flashy program of the time to train yourself playing with your homies…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;political-influence---educational&quot;&gt;Political Influence - Educational&lt;/h3&gt;
+&lt;p&gt;Some government institutions establish different rules of use for their electrical/electronic equipment such as a specific operating system, let’s say in this case a UNIX distro. For example, in some Hispanic (Latin-American) countries it is commonly used for the administrative sector or administrative sector of &lt;em&gt;technological tools&lt;/em&gt; separated from another area directed to the public or social goods, for example Venezuela is characterized by using the Canaima operating system which is a stable project with a certain number of releases in its historical log of changes in versions (here are a couple of references https://web.archive.org/web/20150508143918/http://canaima.softwarelibre.gob.ve/descargas/canaima-popular/versiones/2.0, https://web.archive.org/web/20150603142516/http://canaima.softwarelibre.gob.ve/novedades/presentamos-la-segunda-version-candidate-of-canaima-popular-3.1-name-code-201cauyantepui201d)&lt;/p&gt;
+
+&lt;h3 id=&quot;relationship-with-other-distros&quot;&gt;Relationship with other distros&lt;/h3&gt;
+&lt;p&gt;To compare with other operating systems I have checked their position in the data table published by https://distrowatch.com/&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;th colspan=&quot;3&quot;&gt;Last 12 months&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;240&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/ubos&quot;&gt;UBOS&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 31&quot;&gt;31&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+ &lt;th class=&quot;phr1&quot;&gt;241&lt;/th&gt;
+ &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/untangle&quot;&gt;Untangle&lt;/a&gt;&lt;/td&gt;
+ &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 31&quot;&gt;31&lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;th class=&quot;phr1&quot;&gt;242&lt;/th&gt;
+   &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/vz&quot;&gt;VzLinux&lt;/a&gt;&lt;/td&gt;
+   &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 31&quot;&gt;31&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;243&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/diamond&quot;&gt;Diamond&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 30&quot;&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;244&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/plamo&quot;&gt;plamo&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 30&quot;&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;245&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/canaima&quot;&gt;Canaima&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 29&quot;&gt;29&lt;/td&gt;
+&lt;/tr&gt; &lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;246&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/elearnix&quot;&gt;eLearnix&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 29&quot;&gt;29&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+&lt;th class=&quot;phr1&quot;&gt;247&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/freedombox&quot;&gt;Freedombox&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 29&quot;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;248&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/max&quot;&gt;Max&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;Yesterday: 29&quot;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;249&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/redo&quot;&gt;Redo&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;29&quot;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;th class=&quot;phr1&quot;&gt;250&lt;/th&gt;
+  &lt;td class=&quot;phr2&quot;&gt;&lt;a href=&quot;https://distrowatch.com/swift&quot;&gt;Swift&lt;/a&gt;&lt;/td&gt;
+  &lt;td class=&quot;phr3&quot; title=&quot;29&quot;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+
+&lt;p&gt;As you can see, it is in the range of 240-250 in the position, which is divided into periods of 12, 6, 3, 1 months according to its &lt;a href=&quot;https://distrowatch.com/dwres.php?resource=popularity&quot;&gt;popularity&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I understand that maybe I have deviated a little from the title of the question since I hardly talk about the red star system but for that there is the direct link on the theory of the operating system, I think they should be related in different continents (Asia) and from &lt;em&gt;descending&lt;/em&gt; and less complex way to the product that is used by students, companies and legal institutions.&lt;/p&gt;</content><author><name>Daniel Prisco</name></author><summary type="html">What is the Red Star Operative System and how is compared to other Linux distributions?</summary></entry></feed>

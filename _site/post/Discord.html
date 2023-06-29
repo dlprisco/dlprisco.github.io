@@ -1,7 +1,72 @@
-# Discord
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6e76c5a34f3f50e9131549c206f05c620c4f96af">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<br />
-<br />
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Discord | Daniel website</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Discord" />
+<meta name="author" content="Daniel Prisco" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Bookmark this to keep an eye on my project updates!" />
+<meta property="og:description" content="Bookmark this to keep an eye on my project updates!" />
+<link rel="canonical" href="http://localhost:4000/post/Discord.html" />
+<meta property="og:url" content="http://localhost:4000/post/Discord.html" />
+<meta property="og:site_name" content="Daniel website" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Discord" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Daniel Prisco"},"description":"Bookmark this to keep an eye on my project updates!","headline":"Discord","url":"http://localhost:4000/post/Discord.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>Daniel website</h1>
+        </a>
+        <h2>Bookmark this to keep an eye on my project updates!</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/dlprisco/dlprisco.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="discord">Discord</h1>
+
+<p><br />
+<br /></p>
 
 <ul>
     <li>
@@ -9,7 +74,7 @@
 		    <summary>
 				<a href="#fortnite-bot"></a><h3 style="display:inline;" name="fortnite-bot">How to make a Fortnite bot (Jun 29, 2023)</h3>
 			</summary>
-			<br>
+			<br />
 			<h4>How to create a <code><b>discord-bot</b></code> using a <code><b>python</b></code> Fortnite-API wrapper</h4>
 			<p>
 				&nbsp;You could check main page of documentation straight from <a href="https://github.com/Fortnite-API">github-repo</a> and <a href="https://fortnite-api.com/">Fortnite-API</a>
@@ -35,8 +100,8 @@
 			</p>
 			
 			<p>
-				Now install <code><b>discord.py, py-wrapper</b></code><br>
-			    <code><pre>pip install discord.py fortnite-api</pre></code><br>
+				Now install <code><b>discord.py, py-wrapper</b></code><br />
+			    <code><pre>pip install discord.py fortnite-api</pre></code><br />
 			</p>
 			
 			<p>
@@ -68,22 +133,22 @@ async def _bot(ctx):
 bot.run('token')</pre>
 				</code>
 				to start you could override command method to create a new coroutine command
-				by ordering as the <a href="https://github.com/Fortnite-API/py-wrapper">docs</a>.<br><br>
-				Example:<br>
+				by ordering as the <a href="https://github.com/Fortnite-API/py-wrapper">docs</a>.<br /><br />
+				Example:<br />
 				<code>
 					<pre>@bot.command()
 async def cosmetics(ctx):
 """Shows info about cosmetics"""
 	await ctx.send('Fortnite Cosmetics')</pre>
 				</code>
-				<br>
+				<br />
 				to get cosmetics data we could use <b><code>cosmetics.fetch_all()</code></b> and it will return an array of cosmetics objects
-				<code><pre>>>> cosmetics = api.cosmetics.fetch_all()
->>> print(type(cosmetics), type(cosmetics[0]))
->>> <class 'list'> <class 'fortnite_api.cosmetics.BrCosmetic'>
->>> cosmetics[0]
->>> <fortnite_api.cosmetics.BrCosmetic object at 0x000002912FE39EA0></pre>
-				</code><br>
+				<code><pre>&gt;&gt;&gt; cosmetics = api.cosmetics.fetch_all()
+&gt;&gt;&gt; print(type(cosmetics), type(cosmetics[0]))
+&gt;&gt;&gt; &lt;class 'list'&gt; &lt;class 'fortnite_api.cosmetics.BrCosmetic'&gt;
+&gt;&gt;&gt; cosmetics[0]
+&gt;&gt;&gt; &lt;fortnite_api.cosmetics.BrCosmetic object at 0x000002912FE39EA0&gt;</pre>
+				</code><br />
 				but, what really means <code><i>'fortnite_api.cosmetics.BrCosmetic'</i></code>?, well this could be some confusing 
 				at first look because you probably don't know how to handle this item. What i have do it (because all request returns objects like this) is
 				just go to the repo and open the file corresponding to the class name <code><u>cosmetics.py</u></code> in <a href="https://github.com/Fortnite-API/py-wrapper/blob/master/fortnite_api/cosmetics.py">https://github.com/Fortnite-API/py-wrapper/blob/master/fortnite_api/cosmetics.py</a>
@@ -100,12 +165,12 @@ async def cosmetics(ctx):
 				</code>
 				
 				now that you know the name of the variables you could access to it:
-				<code><pre>>>> cosmetics[0].name
->>> "Cazadora Wings"</pre>
+				<code><pre>&gt;&gt;&gt; cosmetics[0].name
+&gt;&gt;&gt; "Cazadora Wings"</pre>
 				</code>
 				this is a simple way to get information about the class you want to request,
 				but if you have some experience handling object oriented programming you 
-				could try to iterate over class attributes by using a loop and methods like <code><b>dir, getattr and callable</b></code><br><br>
+				could try to iterate over class attributes by using a loop and methods like <code><b>dir, getattr and callable</b></code><br /><br />
 				example:
 				<code>
 					<pre># add a function after declare fortnite-api
@@ -118,7 +183,7 @@ def iter_obj(req_class):
 				when calling the first object in <b><code>cosmetics</code></b>
 				
 				<code>
-					<pre>>>> iter_obt(cosmetics[0])
+					<pre>&gt;&gt;&gt; iter_obt(cosmetics[0])
 added: 2023-06-12 21:47:52+00:00
 appearances: 0
 backend_introduction: 25
@@ -164,7 +229,7 @@ small_icon: https://fortnite-api.com/images/cosmetics/br/backpack_agentsherbert/
 type: BrCosmeticType.BACKPACK
 unlock_requirements: None
 unseen_for: None
-variants: [<fortnite_api.cosmetics.BrCosmeticVariant object at 0x000002912FE3AB00>]
+variants: [&lt;fortnite_api.cosmetics.BrCosmeticVariant object at 0x000002912FE3AB00&gt;]
 					</pre>
 				</code>
 				if you are not good when dealing with english you could set your favorite language
@@ -172,15 +237,15 @@ variants: [<fortnite_api.cosmetics.BrCosmeticVariant object at 0x000002912FE3AB0
 				<code></code>
 				
 				<code>
-					<pre>>>> from fortnite_api.enums import GameLanguage
->>> german = GameLanguage.GERMAN
->>> cosmetics = api.cosmetics.fetch_all(german)</pre>
+					<pre>&gt;&gt;&gt; from fortnite_api.enums import GameLanguage
+&gt;&gt;&gt; german = GameLanguage.GERMAN
+&gt;&gt;&gt; cosmetics = api.cosmetics.fetch_all(german)</pre>
 				</code>
-				<br>
-				<br>
+				<br />
+				<br />
 				Example:
 				<code>
-					<pre>>>> it_obj(cosmetics[1]) # second item
+					<pre>&gt;&gt;&gt; it_obj(cosmetics[1]) # second item
 added: 2023-04-11 10:06:45+00:00
 appearances: 0
 backend_introduction: 24
@@ -229,14 +294,14 @@ unseen_for: None
 variants: None</pre>
 				</code>
 			</p>
-			<br>
-			<br>
+			<br />
+			<br />
 			<p>
 			Commonly <b>cosmetics, banners, stats, shop items</b> returns a very large array of different objects, 
 			an this will cost too much time consumption and memory resources, so what is highly recommended is 
 			to use methods to search each of them by his name, and this is what our bot commands should be composed.
-			<br>
-			<br>
+			<br />
+			<br />
 			first, after you define <b>iter_obj</b> declare a new variable called <b>languages</b>:
 			<code>
 				<pre>languages = {'ar': 'ARABIC',
@@ -277,12 +342,12 @@ async def cosmetics(ctx, lang: str, *, name: str):
         await ctx.send(e)</pre>
 			</code>
 			</p>
-			<br>
-			<br>
+			<br />
+			<br />
 			<p>example</p>
-			<img src="/assets/img/animated.gif" alt="example animated" style="background-color:#000;"/>
-			<br>
-			<br>
+			<img src="/assets/img/animated.gif" alt="example animated" style="background-color:#000;" />
+			<br />
+			<br />
 			<p>
 			There are no so much differences between the next methods because i'll have defined
 			at least very closed to <b><code>cosmetics</code></b>, the following section to request
@@ -290,26 +355,26 @@ async def cosmetics(ctx, lang: str, *, name: str):
 			about player account.
 			</p>
 			<code>
-				<pre>>>> player = api.stats.fetch_by_name('playername')
->>> raise NotFound(data.get('error', 'Error message not provided!'))
->>> fortnite_api.errors.NotFound: the requested account does not exist</pre>
+				<pre>&gt;&gt;&gt; player = api.stats.fetch_by_name('playername')
+&gt;&gt;&gt; raise NotFound(data.get('error', 'Error message not provided!'))
+&gt;&gt;&gt; fortnite_api.errors.NotFound: the requested account does not exist</pre>
 			</code>
-			<br>
+			<br />
 			<p>
 			    if the player name introduced does not exist it will raise an error
 			</p>
 			<code>
-				<pre>>>> player = api.stats.fetch_by_name('Bizzle')  # TOP player in 2018
->>> raise NotFound(data.get('error', 'Error message not provided!'))
->>> fortnite_api.errors.NotFound: the requested account does not exist</pre>
+				<pre>&gt;&gt;&gt; player = api.stats.fetch_by_name('Bizzle')  # TOP player in 2018
+&gt;&gt;&gt; raise NotFound(data.get('error', 'Error message not provided!'))
+&gt;&gt;&gt; fortnite_api.errors.NotFound: the requested account does not exist</pre>
 			</code>
-			<br>
+			<br />
 			<p>
 			ok you guys at this point remember to introduce a correct player account because 
 			you will have undesired results
 			</p>
-			<br>
-			<br>
+			<br />
+			<br />
 			<code>
 				<pre> # By the end the function could be something like this
 @bot.command()
@@ -341,11 +406,11 @@ async def player(ctx, *, name: str):
 			<p>
 			output
 			</p>
-			<img src="/assets/img/stats.jpeg" alt="top player stats"/>
-			<br>
-			<br>
-			<br>
-			<br>
+			<img src="/assets/img/stats.jpeg" alt="top player stats" />
+			<br />
+			<br />
+			<br />
+			<br />
 			<h5>Coming soon ;)</h5>
 			<ul>
 				<li>Shop features</li>
@@ -354,15 +419,15 @@ async def player(ctx, *, name: str):
 				<li>and more...</li>
 			</ul>
 			<p> entire code could be found at <a href="https://github.com/dlprisco/discord-bot/tree/main/fortnite">github-repo</a></p>
-			<br>
-			<br>
-			<br>
-			<br>
+			<br />
+			<br />
+			<br />
+			<br />
 		</details>
 	</li>
-	<br>
-	<br>
-	<br>
+	<br />
+	<br />
+	<br />
 	
 	<li>
 		<details>
@@ -413,9 +478,9 @@ async def _bot(ctx):
 			<p>for more information, please check the <a href="https://github.com/dlprisco/discord-bot/blob/main/bot/main.py">repository</a> that i have made some coding bot practices and watch the <a href="https://www.youtube.com/embed/lcVAy7zAubg">video tutorial</a>.</p>
 		</details>
 	</li>
-	<br>
-	<br>
-	<br>
+	<br />
+	<br />
+	<br />
 	
 	<li>
 		<details>
@@ -453,3 +518,8 @@ client.run('bot')
 		</details>
 	</li>
 </ul>
+
+      </section>
+    </div>
+  </body>
+</html>
