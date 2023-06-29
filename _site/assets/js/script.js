@@ -1,4 +1,3 @@
-//axios.get('pk.dff7a446bdbd1ca60308712ce0bdedd0')
 
 /*
 var nav = document.getElementById('nav-bar');

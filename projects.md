@@ -7,7 +7,8 @@
 
 <br>
 <h3> Overview </h3>
-[weather-inf](https://github.com/dlprisco/weather-inf) is made for tracking information in your locality and some approximate details of this, such as the minimum temperature, pressure, wind speed, humidity, etc... The information is received through calls to the official API of <a href="http://openweathermap.org/">open-weather-map</a>, returned in JSON format and processed to be rendered directly in the web page.
+
+[weather-inf](https://github.com/dlprisco/weather-inf) is made for tracking information in your locality and some approximate details of this, such as the minimum temperature, pressure, wind speed, humidity, etc... The information is received through calls to the official API of open-weather, returned in **`JSON`** format and processed to be rendered directly in the web page.
 
 ### Data fetching
 &nbsp; To fetch current weather data from the server, is defined an asynchronous function and called from useEffect React hook to recieve a response in JSON format to unpack in the main page, you could check the parameters that are passed inside the fetch() call, i. e. **q=${city} &lat=${lat} &lon=${long}** where {city}, {lat}, {long} are one  of requiere's to proccess current weather.
@@ -54,4 +55,11 @@ npm: <br>
 ### Bug report
 &nbsp; You can send me a message to my email with any suggestion or in case of error, you would help me a lot.
 
+<<<<<<< HEAD
 [project](/projects/weather)
+=======
+[project](/projects/weather)
+
+<br>
+<hr>
+>>>>>>> 7d77e9f8600d8528dd2354249fb18f0fb34a4c47
