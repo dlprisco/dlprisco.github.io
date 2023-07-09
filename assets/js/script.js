@@ -36,7 +36,7 @@ function search_country() {
 	//window.onload(current_weather_this())
 	const city_name = document.querySelector("input").value;
 	
-    axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city_name}&appid=${APIID}`)
+    axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${city_name}&appid=${APIID}`)
 	.then(function (response) {
 		data = response.data[0];
 		document.getElementById("main").innerHTML = '';
@@ -83,7 +83,7 @@ function display_info() {
 	  let t = document.createElement('h2');
 	  t.innerHTML = 'Current Weather'
 	  document.getElementById("main").appendChild(t)
-  	axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIID}&units=metric`)
+  	axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIID}&units=metric`)
 	.then(function (response) {
 		current = response.data;
 		for (const key in current) {
