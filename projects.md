@@ -55,9 +55,6 @@ npm: <br>
 ### Bug report
 &nbsp; You can send me a message to my email with any suggestion or in case of error, you would help me a lot.
 
-<<<<<<< HEAD
-[project](/projects/weather)
-=======
 [project](/projects/weather)
 
 <br>
