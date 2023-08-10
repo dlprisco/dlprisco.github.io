@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>Hello everyone!. My name is Daniel Prisco and this is my personal website.</h1>
+<h1>Hello everyone!. My name is Daniel Prisco and this is my personal page.</h1>
 <br/>
 <p>
 
