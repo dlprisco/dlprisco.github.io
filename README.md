@@ -25,12 +25,12 @@
 
 <or>
   <li>
-    <a href="https://stackoverflow.com/users/11717481">stackoverflow</a> <br />
+    <a href="https://es.stackoverflow.com/users/327285/">stackoverflow</a> <br />
 <img className="imgembed"
-  src="https://stackoverflow.com/users/flair/11717481.png"
+  src="https://es.stackoverflow.com/users/flair/327285.png"
   style="width: 300px;, height: 77px;"
-  alt="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-  title="profile for ellhe-blaster at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
+  alt="profile for user327285 at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+  title="profile for user327285 at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
   </li>
   <li> <a href="https://www.codewars.com/users/hexorhex">codewars <br /> <img style="width: 300px;" className="imgembed" alt="media-source" src="https://www.codewars.com/users/hexorhex/badges/micro"/></a>
   </li>
@@ -40,7 +40,7 @@
 <br >
 <hr >
 
-	<h3>sections</h3>
+<h3>sections</h3>
 	<ul>
 		<li><a href="about">about</a></li>
 		<li><a href="contact">contact</a></li>
