@@ -47,8 +47,6 @@
 		<li><a href="blog">blog</a></li>
 		<li><a href="projects">projects</a></li>
 	</ul>
-		<br/>
-		<img src="/dlprisco.png" alt="image" />
 		<hr>
 		<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 	</body>
