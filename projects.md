@@ -54,8 +54,17 @@ npm: <br>
 
 ### Bug report
 &nbsp; You can send me a message to my email with any suggestion or in case of error, you would help me a lot.
-
 [project](/projects/weather)
+
+<br>
+<hr>
+<br>
+
+<h2>COVID19 Venezuela stats</h2>
+&nbsp;🦠 Data of the nation, such as cases confirmed by age-range or each state in general.
+
+[project](/projects/stats)
+
 
 <br>
 <hr>
