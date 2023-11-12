@@ -68,7 +68,7 @@
             //var chart = root.container.children.push( am5map.MapChart.new(root, {}));
             //var x = am5core.create("mapchart", am5maps.MapChart);
             var x = am4core.create("mapchart", am4maps.MapChart);
-            console.log(countries);
+            
             // Set map definition
             x.geodataSource.url =
               "https://www.amcharts.com/lib/4/geodata/json/venezuelaHigh.json";
@@ -270,8 +270,6 @@
                 recovered: recovery
               });
             }
-            console.log(...json[0].Date.split("-"));
-
             chart.data = data;
 
             var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
@@ -359,8 +357,6 @@
               })
               //data.push({ date2: date, recovered: recovery });
             }
-            console.log(...json[0].Date.split("-"));
-
             chart.data = data;
 
 
@@ -423,11 +419,7 @@
               })
               //data.push({ date2: date, recovered: recovery });
             }
-            console.log(...json[0].Date.split("-"));
-
             chart.data = data;
-
-
             var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
             dateAxis.renderer.grid.template.location = 0;
             dateAxis.renderer.labels.template.fill = am4core.color("#e59165");
