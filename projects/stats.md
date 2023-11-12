@@ -57,7 +57,7 @@
       var countries = {}
 
       function fetchCountriesData() {
-        axios.get("http://covid19.patria.org.ve/api/v1/summary")
+        axios.get("https://covid19.patria.org.ve/api/v1/summary")
           .then(function(json) {
 
             countries = json.data.Confirmed.ByState;
