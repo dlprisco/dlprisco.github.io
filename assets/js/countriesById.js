@@ -28,4 +28,7 @@ var countriesById = {
   'BQ': 'Bonaire, Saint Eustachius...',
   'CW': 'Curaçao',
   }
+
+var missingID = {
   
+}
