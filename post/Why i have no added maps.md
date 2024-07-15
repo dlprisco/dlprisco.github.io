@@ -1,24 +1,47 @@
 <html>
+
   <head>
-    <title# Why I have no add more maps or information on maps</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>covid-19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 
-<body>
-<br />
-<br />
- <p>Why I have no add map corrections to view the covid-19 information is because Venezuela map is stored in <code>/assets/js/map_features.json</code>and the polygons and other features of a valid map in the country.</p>	
-	    	<h2>Guyana Esequibo</h2>
-			<p>
-				This is the map that is missing in the other file.
-			</p>
+  <body>
+
+    <div class="p-3 text-secondary bg-dark border border-primary-subtle rounded-3">
+
+      <h1>COVID19 Venezuela</h1>
+      <div class="container-sm">Simple project to visualize COVID19 stats.</div>
+    </div>
+
+    <hr>
+
+    <div class="container-xxl text-secondary bg-dark border border-secondary" style="width:100%;height:700px;">
+      <h2>Confirmed & Recovered</h2>
+      <div id="chartdiv" style="width:100%;height:80%;"></div>
+    </div>
+
+    <hr>
+    <div class="container-xxl text-secondary bg-dark border border-secondary" style="width:100%;height:700px;">
+      <h2>Death Cases</h2>
+      <div id="chartdivd" style="width:100%;height:80%;"></div>
+    </div>
+
+    <hr>
+    <div class="container-xxl text-secondary bg-dark border border-secondary" style="width:100%;height:700px;">
+      <h2>Active Cases</h2>
+      <div id="chartdiva" style="width:100%;height:80%;"></div>
+    </div>
+    <hr>
     <div class="container-xl text-secondary bg-dark border border-secondary">
       <h2>Confirmed Cases (country)</h2>
       <div id="mapchart" style="width100%;height:450px;"></div>
     </div>
-		    
+
+
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+
     <script src="//cdn.amcharts.com/lib/4/core.js"></script>
     <script src="//cdn.amcharts.com/lib/4/maps.js"></script>
     <script src="//cdn.amcharts.com/lib/5/xy.js"></script>
@@ -222,7 +245,219 @@
       fetchCountriesData();
 
     </script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		   
-</body>
+
+    <script>
+      function fetchTimelineData() {
+        fetch("https://covid19.patria.org.ve/api/v1/timeline")
+          .then((response) => response.json())
+          .then((json) => {
+            am4core.useTheme(am4themes_animated);
+            let chart = am4core.create("chartdiv", am4charts.XYChart);
+            var data = [];
+            var confirmed = 0;
+            var death = 0;
+            var recovery = 0;
+            for (var i = 0; i < json.length; i++) {
+              confirmed = json[i].Confirmed.Count;
+              recovery = json[i].Recovered.Count;
+              let date = new Date(...json[i].Date.split("-"))
+              data.push({
+                date1: date,
+                confirmed: confirmed
+              })
+              data.push({
+                date2: date,
+                recovered: recovery
+              });
+            }
+            chart.data = data;
+
+            var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+            dateAxis.renderer.grid.template.location = 0;
+            dateAxis.renderer.labels.template.fill = am4core.color("#e59165");
+
+            var dateAxis2 = chart.xAxes.push(new am4charts.DateAxis());
+            dateAxis2.renderer.grid.template.location = 0;
+            dateAxis2.renderer.labels.template.fill = am4core.color("#dfcc64");
+
+            var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+            valueAxis.tooltip.disabled = true;
+            valueAxis.renderer.labels.template.fill = am4core.color("#e59165");
+
+            valueAxis.renderer.minWidth = 60;
+
+            var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
+            valueAxis2.tooltip.disabled = true;
+            valueAxis2.renderer.grid.template.strokeDasharray = "2,3";
+            valueAxis2.renderer.labels.template.fill = am4core.color("#dfcc64");
+            valueAxis2.renderer.minWidth = 60;
+
+            var series = chart.series.push(new am4charts.LineSeries());
+            series.name = "Confirmed";
+            series.dataFields.dateX = "date1";
+            series.dataFields.valueY = "confirmed";
+            series.tooltipText = "{valueY.value}";
+            series.fill = am4core.color("#F5E8B7");
+            series.stroke = am4core.color("#F5E8B7");
+            //series.strokeWidth = 3;
+
+            var series2 = chart.series.push(new am4charts.LineSeries());
+            series2.name = "Recovered";
+            series2.dataFields.dateX = "date2";
+            series2.dataFields.valueY = "recovered";
+            series2.yAxis = valueAxis2;
+            series2.xAxis = dateAxis2;
+            series2.tooltipText = "{valueY.value}";
+            series2.fill = am4core.color("#CD5C08");
+            series2.stroke = am4core.color("#CD5C08");
+            //series2.strokeWidth = 3;
+
+            chart.cursor = new am4charts.XYCursor();
+            chart.cursor.xAxis = dateAxis2;
+
+            var scrollbarX = new am4charts.XYChartScrollbar();
+            scrollbarX.series.push(series);
+            chart.scrollbarX = scrollbarX;
+
+            chart.legend = new am4charts.Legend();
+            chart.legend.parent = chart.plotContainer;
+            chart.legend.zIndex = 100;
+
+            valueAxis2.renderer.grid.template.strokeOpacity = 0.07;
+            dateAxis2.renderer.grid.template.strokeOpacity = 0.07;
+            dateAxis.renderer.grid.template.strokeOpacity = 0.07;
+            valueAxis.renderer.grid.template.strokeOpacity = 0.07;
+
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      }
+
+      fetchTimelineData();
+
+    </script>
+
+
+    <script>
+      function fetchTimelineData() {
+        fetch("https://covid19.patria.org.ve/api/v1/timeline")
+          .then((response) => response.json())
+          .then((json) => {
+            let chart = am4core.create("chartdivd", am4charts.XYChart);
+            let data = [];
+            var death = 0;
+            var recovery = 0;
+            for (var i = 0; i < json.length; i++) {
+              death = json[i].Deaths.Count;
+              let date = new Date(...json[i].Date.split("-"))
+              data.push({
+                date1: date,
+                deaths: death
+              })
+              //data.push({ date2: date, recovered: recovery });
+            }
+            chart.data = data;
+
+
+            var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+            dateAxis.renderer.grid.template.location = 0;
+            dateAxis.renderer.labels.template.fill = am4core.color("#e59165");
+
+            var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+            valueAxis.tooltip.disabled = true;
+            valueAxis.renderer.labels.template.fill = am4core.color("#e59165");
+
+            valueAxis.renderer.minWidth = 60;
+
+            var series = chart.series.push(new am4charts.LineSeries());
+            series.name = "Deaths";
+            series.dataFields.dateX = "date1";
+            series.dataFields.valueY = "deaths";
+            series.tooltipText = "{valueY.value}";
+            series.fill = am4core.color("#C1D8C3");
+            series.stroke = am4core.color("#C1D8C3");
+            //series.strokeWidth = 3;
+
+
+            //series2.strokeWidth = 3;
+            chart.cursor = new am4charts.XYCursor();
+            var scrollbarX = new am4charts.XYChartScrollbar();
+            scrollbarX.series.push(series);
+            chart.scrollbarX = scrollbarX;
+
+            chart.legend = new am4charts.Legend();
+            chart.legend.parent = chart.plotContainer;
+            chart.legend.zIndex = 100;
+
+            dateAxis.renderer.grid.template.strokeOpacity = 0.07;
+            valueAxis.renderer.grid.template.strokeOpacity = 0.07;
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      }
+
+      fetchTimelineData();
+
+    </script>
+
+    <script>
+      function fetchTimelineData() {
+        fetch("https://covid19.patria.org.ve/api/v1/timeline")
+          .then((response) => response.json())
+          .then((json) => {
+            let chart = am4core.create("chartdiva", am4charts.XYChart);
+            let data = [];
+            var active = 0;
+            for (var i = 0; i < json.length; i++) {
+              active = json[i].Active.Count;
+              let date = new Date(...json[i].Date.split("-"))
+              data.push({
+                date1: date,
+                active: active
+              })
+              //data.push({ date2: date, recovered: recovery });
+            }
+            chart.data = data;
+            var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+            dateAxis.renderer.grid.template.location = 0;
+            dateAxis.renderer.labels.template.fill = am4core.color("#e59165");
+
+            var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+            valueAxis.tooltip.disabled = true;
+            valueAxis.renderer.labels.template.fill = am4core.color("#e59165");
+
+            valueAxis.renderer.minWidth = 60;
+
+            var series = chart.series.push(new am4charts.LineSeries());
+            series.name = "Active";
+            series.dataFields.dateX = "date1";
+            series.dataFields.valueY = "active";
+            series.tooltipText = "{valueY.value}";
+            series.fill = am4core.color("#6A9C89");
+            series.stroke = am4core.color("#6A9C89");
+            //series.strokeWidth = 3;
+
+
+            //series2.strokeWidth = 3;
+            chart.cursor = new am4charts.XYCursor();
+            var scrollbarX = new am4charts.XYChartScrollbar();
+            scrollbarX.series.push(series);
+            chart.scrollbarX = scrollbarX;
+
+            chart.legend = new am4charts.Legend();
+            chart.legend.parent = chart.plotContainer;
+            chart.legend.zIndex = 100;
+
+            dateAxis.renderer.grid.template.strokeOpacity = 0.07;
+            valueAxis.renderer.grid.template.strokeOpacity = 0.07;
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      }
+      fetchTimelineData();
+    </script>
+  </body>
 </html>
