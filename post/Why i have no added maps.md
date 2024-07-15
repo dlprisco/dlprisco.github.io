@@ -1,5 +1,13 @@
-# Why I have no add more maps or information on maps
+<html>
 
+  <head>
+    <title# Why I have no add more maps or information on maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+<body>
 <br />
 <br />
  <p>Why I have no add map corrections to view the covid-19 information is because Venezuela map is stored in <code>/assets/js/map_features.json</code>and the polygons and other features of a valid map in the country.</p>	
@@ -342,3 +350,5 @@ async def _bot(ctx):
 		</details>
 	</li>
 </ul>
+</body>
+</html>
