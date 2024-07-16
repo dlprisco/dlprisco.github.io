@@ -59,7 +59,7 @@
               if (id === "AW" || id === "BQ" || id === "CW") {
                 return NaN;
              }
-               return countries[countriesById[id]];
+               return countriesById[id];
             }
     </script>
     <script>
