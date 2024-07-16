@@ -1,4 +1,4 @@
-missingMap = {
+missingMap: FeatureCollection = {
   "type": "FeatureCollection",
   "features": [
     {
