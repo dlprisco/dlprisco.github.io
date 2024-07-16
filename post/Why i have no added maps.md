@@ -62,10 +62,5 @@
                return countriesById[id];
             }
     </script>
-    <script>
-      document.getElementById("myButton").addEventListener("click", function() {
-        alert('Button was clicked!');
-      });
-    </script>
   </body>
 </html>
