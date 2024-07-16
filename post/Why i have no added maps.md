@@ -47,7 +47,7 @@
             var x = am4core.create("mapchart", am4maps.MapChart);
             
             // Set map definition
-            x.geodataSource.url = "https://www.amcharts.com/lib/4/geodata/json/guyanaHigh.json";
+            x.geodataSource.url = "/assets/js/missingMap.json";
             x.geodataSource.events.on("parseended", function(ev) {
               var data = [];
               for (var i = 0; i < ev.target.data.features.length; i++) {
