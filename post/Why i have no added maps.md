@@ -49,7 +49,7 @@
               for (var i = 0; i < ev.target.data.features.length; i++) {
                 data.push({
                   id: ev.target.data.features[i].id,
-                  value: getCountryData(ev.target.data.features[i].id)
+                  //value: getCountryData(ev.target.data.features[i].id)
                 });
               }
             });
