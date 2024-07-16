@@ -1,6 +1,4 @@
-import { FeatureCollection } from "./.internal/Geodata";
-
-missingMap: FeatureCollection = {
+missingMap = {
   "type": "FeatureCollection",
   "features": [{
       "type": "Feature",
