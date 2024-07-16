@@ -62,124 +62,6 @@
 
             x.projection = new am4maps.projections.Mercator();
 
-            var polygonSeries = x.series.push(new am4maps.MapPolygonSeries());
-            polygonSeries.dataFields.id = "id";
-            polygonSeries.dataFields.value = "confirmedPC";
-            polygonSeries.interpolationDuration = 0;
-
-            polygonSeries.useGeodata = true;
-            polygonSeries.nonScalingStroke = true;
-            polygonSeries.strokeWidth = 0.5;
-
-            // this helps to place bubbles in the visual middle of the area
-            polygonSeries.calculateVisualCenter = true;
-            polygonSeries.useGeodata = true;
-
-            // Configure series tooltip
-            var polygonTemplate = polygonSeries.mapPolygons.template;
-            polygonTemplate.tooltipText = "{name}";
-            polygonTemplate.nonScalingStroke = false;
-            polygonTemplate.strokeWidth = 0.5;
-            polygonTemplate.fill = am4core.color("#3b3b3b");
-            polygonTemplate.stroke = am4core.color("#000000");
-            polygonTemplate.strokeOpacity = 0.15;
-            polygonTemplate.setStateOnChildren = true;
-            polygonTemplate.tooltipPosition = "fixed";
-
-            polygonSeries.heatRules.push({
-              target: polygonTemplate,
-              property: "fill",
-              min: am4core.color("#1c000d"),
-              max: am4core.color("#000000"),
-              dataField: "value"
-            });
-
-            var polygonHoverState = polygonTemplate.states.create("hover");
-            polygonHoverState.transitionDuration = 1400;
-            polygonHoverState.properties.fill = am4core.color("#1b1b1b");
-
-            var polygonActiveState = polygonTemplate.states.create("active");
-            polygonActiveState.properties.fill = am4core.color("#0f0f0f");
-
-            var bubbleSeries = x.series.push(new am4maps.MapImageSeries());
-
-            let bubbleData = [];
-
-            for (var i = 0; i < mapFeatures.features.length; i++) {
-              bubbleData.push({
-                id: mapFeatures.features[i].id,
-                value: getCountryData(mapFeatures.features[i].id)
-              });
-            }
-
-            bubbleSeries.data = JSON.parse(JSON.stringify(bubbleData));
-
-            bubbleSeries.dataFields.value = "value";
-            bubbleSeries.dataFields.id = "id";
-
-            // adjust tooltip
-            bubbleSeries.tooltip.animationDuration = 0;
-            bubbleSeries.tooltip.showInViewport = false;
-            bubbleSeries.tooltip.background.fillOpacity = 0.2;
-            bubbleSeries.tooltip.getStrokeFromObject = true;
-            bubbleSeries.tooltip.getFillFromObject = false;
-            bubbleSeries.tooltip.background.fillOpacity = 0.2;
-            bubbleSeries.tooltip.background.fill = am4core.color("#000000");
-
-            var imageTemplate = bubbleSeries.mapImages.template;
-            // if you want bubbles to become bigger when zoomed, set this to false
-            imageTemplate.nonScaling = true;
-            imageTemplate.strokeOpacity = 0;
-            imageTemplate.fillOpacity = 0.55;
-            imageTemplate.tooltipText = "{value}[/]";
-            imageTemplate.applyOnClones = true;
-            imageTemplate.fill = am4core.color("red");
-
-            // When hovered, circles become non-opaque
-            var imageHoverState = imageTemplate.states.create("hover");
-            imageHoverState.properties.fillOpacity = 1;
-            // this is needed for the tooltip to point to the top of the circle instead of the middle
-            imageTemplate.adapter.add("tooltipY", function(tooltipY, target) {
-              return -target.children.getIndex(0).radius;
-            });
-
-            // When hovered, circles become non-opaque
-
-            // add circle inside the image
-            let circle = imageTemplate.createChild(am4core.Circle);
-            // this makes the circle to pulsate a bit when showing it
-            circle.hiddenState.properties.scale = 0.0001;
-            circle.hiddenState.transitionDuration = 2000;
-            circle.defaultState.transitionDuration = 2000;
-            circle.defaultState.transitionEasing = am4core.ease.elasticOut;
-            // later we set fill color on template (when changing what type of data the map should show) and all the clones get the color because of this
-            circle.applyOnClones = true;
-
-            // Create hover state and set alternative fill color
-            var hs = polygonTemplate.states.create("hover");
-            hs.properties.fill = am4core.color("#0f0f0f");
-
-            bubbleSeries.heatRules.push({
-              target: circle,
-              property: "radius",
-              min: 10,
-              max: 60,
-              dataField: "value"
-            });
-
-            // when data items validated, hide 0 value bubbles (because min size is set)
-            bubbleSeries.events.on("dataitemsvalidated", function() {
-              bubbleSeries.dataItems.each((dataItem) => {
-                var mapImage = dataItem.mapImage;
-                var circle = mapImage.children.getIndex(0);
-                if (mapImage.dataItem.value === 0) {
-                  circle.hide(0);
-                } else if (circle.isHidden || circle.isHiding) {
-                  circle.show();
-                }
-              });
-            });
-
             // this places bubbles at the visual center of a country
             imageTemplate.adapter.add("latitude", function(latitude, target) {
               var polygon = polygonSeries.getPolygonById(target.dataItem.id);
@@ -209,7 +91,7 @@
                 return NaN;
               }
 
-              return countriesById[id];
+              return countries[countriesById[id]];
             }
 
           })
