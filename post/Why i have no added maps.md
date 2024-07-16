@@ -7,14 +7,27 @@
 
 <body>
 <p>Why I have no add map corrections to view the covid-19 information is because Venezuela map is stored in <code>/assets/js/map_features.json</code>and the polygons and other features of a valid map in the country.</p>	
-<h2>Guyana Esequibo</h2>
+<h2>missing map</h2>
 <p>
-This is the map that is missing in the other file.
+This is the missing state on the map where the covid-19 data is shown, without many details since it only highlights the name of the capital of its states.
 </p>
 <div class="container-xl text-secondary bg-dark border border-secondary">
-<h2>Confirmed Cases (country)</h2>
+<h2>Guyana Esequibo</h2>
 <div id="mapchart" style="width:450px;height:450px;"></div>
 </div>
+<h2>How to comnine two maps into one</h2>
+<p>A map is just a <code>JSON</code> file that contains coordinate and points to draw a map.</p>
+<p>First, in the main map file we add the second map.</p>
+<pre><code>map = {
+  map1: {[
+
+  ]},
+  map2: {[
+  
+  ]}
+}
+</code></pre>
+  
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
 <script src="//cdn.amcharts.com/lib/4/core.js"></script>
 <script src="//cdn.amcharts.com/lib/4/maps.js"></script>
@@ -216,7 +229,12 @@ console.error(err);
 }
 fetchCountriesData();
 
-</script>
 
+</script>
+<script>
+  document.getElementById("myButton").addEventListener("click", function() {
+  alert('Button was clicked!');
+});
+</script>
 </body>
 </html>
