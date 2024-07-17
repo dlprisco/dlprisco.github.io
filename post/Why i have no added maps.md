@@ -3,6 +3,17 @@
 <title> Why I have no add more maps or information on maps</title>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="//cdn.amcharts.com/lib/4/core.js"></script>
+<script src="//cdn.amcharts.com/lib/4/maps.js"></script>
+<script src="//cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="/assets/js/map_features.json"></script>
+<script src="/assets/js/countriesById.js"></script>
 </head>
 
 <body>
@@ -75,16 +86,6 @@ This is the missing state on the map where the covid-19 data is shown, without m
 
 </code></pre>
 
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="//cdn.amcharts.com/lib/4/core.js"></script>
-<script src="//cdn.amcharts.com/lib/4/maps.js"></script>
-<script src="//cdn.amcharts.com/lib/5/xy.js"></script>
-<script src="//cdn.amcharts.com/lib/4/charts.js"></script>
-<script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="/assets/js/map_features.json"></script>
-<script src="/assets/js/countriesById.js"></script>
 <script>
 var countries = {}
 
