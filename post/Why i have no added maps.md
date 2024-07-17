@@ -18,7 +18,6 @@ This is the missing state on the map where the covid-19 data is shown, without m
 <h2>How to comnine two maps into one</h2>
 <p>A map is just a <code>JSON</code> file that contains coordinate and points to draw a map.</p>
 <p>First, in the main map file we add the second map.</p>
-<pre><code>map = {
   <head>
     <title> Why I have no add more maps or information on maps</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -35,7 +34,6 @@ This is the missing state on the map where the covid-19 data is shown, without m
     <h2>How to comnbine two maps into one</h2>
     <p>A map is just a <code>JSON</code> file that contains coordinate and points to draw a map.</p>
     <p>First, in the main map file we add the second map.</p>
-  
     <pre><code> map = {
   map1: {[
 
