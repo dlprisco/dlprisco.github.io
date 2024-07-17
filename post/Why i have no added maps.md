@@ -45,12 +45,9 @@ This is the missing state on the map where the covid-19 data is shown, without m
     }
     polygonSeries.data = data;
   });
-
+  x.appear(1000, 100);
    x.projection = new am4maps.projections.Mercator();
   })
-  x.appear(1000, 100);
-
-
 </script>
 
 
