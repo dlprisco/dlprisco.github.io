@@ -48,7 +48,7 @@ This is the missing state on the map where the covid-19 data is shown, without m
 
    x.projection = new am4maps.projections.Mercator();
   })
-  chart.appear(1000, 100);
+  x.appear(1000, 100);
 
 
 </script>
