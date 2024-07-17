@@ -44,6 +44,7 @@ This is the missing state on the map where the covid-19 data is shown, without m
 
   ]}
 }
+
 </code></pre>
 
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -250,3 +251,4 @@ fetchCountriesData();
 
 </script>
 </body>
+</html>
