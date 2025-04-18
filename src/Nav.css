@@ -1,0 +1,19 @@
+/* Estilos de la barra de navegación */
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;  /* Comienza oculta hacia arriba (ajusta este valor si tu navbar tiene distinta altura) */
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+/* Alinea el ícono y el texto usando Flexbox */
+.navbar-brand.page-scroll {
+  display: flex;
+  align-items: center;
+}
+
+/* Espaciado entre el SVG y el texto */
+.navbar-brand.page-scroll svg {
+  margin-right: 8px;
+}

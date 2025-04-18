@@ -1,0 +1,306 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Al inicio de tu archivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: #282c34;
+
+}
+
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #1ee2e7;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #17d0d5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Poppins", sans-serif;
+    color: #1ee2e7;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #1ee2e7;
+    background-color: #1ee2e7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #1ee2e7;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #1ee2e7;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #1ee2e7;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #17d0d5;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+.opaque-square {
+  background-color: gray; /* Color opaco (azul metalizado oscuro) */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el texto */
+  align-items: center;     /* Centra verticalmente el texto */
+  padding: 5px;
+  box-sizing: border-box;  /* Incluye el padding en las dimensiones definidas */
+  border-radius: 8px;      /* Opcional: bordes redondeados */
+}
+
+.opaque-square p {
+  color: #ffffff;      /* Color de texto en contraste */
+  font-family: "Poppins", sans-serif; /* Asegúrate de importar la fuente si no es una estándar */
+  text-align: center;
+  opacity: 0.5;
+
+}
+
+.intro-sub-heading {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif !important;
+    opacity: 0.5;
+}
+
+/* Centrar el contenedor */
+.canvas-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100%;
+}
+
+/* Ajustes para el canvas */
+#miCanvas {
+  max-width: 100%;
+  max-height: 90%;
+  display: block;
+  border: 2px solid #ccc; /* Opcional: añadir borde para visualizar */
+}
+
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #1ee2e7;
+}
+
+::selection {
+    text-shadow: none;
+    background: #1ee2e7;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #1ee2e7;
+}
+
+/* Asegúrate de que el header ocupe toda la pantalla */
+header {
+  min-height: 100vh; /* Ocupa 100% de la pantalla */
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Evita problemas en pantallas pequeñas */
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+  color: white;
+}
+
+/* Ajustes en texto */
+.intro-heading {
+  font-size: clamp(20px, 2.5vw, 30px); /* Escalable en distintas pantallas */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Correcciones en .intro-text */
+header .intro-text {
+  padding-bottom: 40px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  header {
+    padding: 3%;
+    flex-direction: column; /* Cambia la estructura en dispositivos pequeños */
+  }
+
+  header .intro-text {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  header .intro-text .intro-heading {
+    font-size: clamp(18px, 2vw, 20px);
+    line-height: 50px;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: clamp(16px, 2vw, 24px);
+    line-height: 30px;
+  }
+}
+
+.intro-lead-in {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, var(--random-color), #9400D3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  filter: saturate(150%);
+  transition: background 0.5s ease-in-out;
+}
+

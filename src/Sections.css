@@ -1,0 +1,387 @@
+/* Contenedor principal para mejorar la experiencia de scroll (opcional) */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+}
+.sections-container {
+  scroll-behavior: smooth;
+}
+
+/* Sección 1: ocupa toda la altura del viewport */
+.section-one {
+  height: 100vh;
+  background-color: #282c34;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Sentinel: elemento invisible que usaremos para detectar el final de la sección */
+.sentinel {
+  height: 1px; /* Un marcador pequeño */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Sección 2: inicialmente oculta */
+.section-two {
+  height: 100vh;
+  background-color: #282c34;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.opaque-square-section {
+  background-color: transparent; /* Color opaco (azul metalizado oscuro) */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el texto */
+  align-items: center;     /* Centra verticalmente el texto */
+  padding: 5px;
+  box-sizing: border-box;  /* Incluye el padding en las dimensiones definidas */
+  border-radius: 8px;      /* Opcional: bordes redondeados */
+  opacity: 0.5;
+  border-color: gray;
+  border: 5;
+}
+
+/* El título se posiciona de forma absoluta */
+.section-title {
+  position: absolute;
+  top: 20px;                   /* Se eleva por encima del contenedor (ajusta según el tamaño de fuente) */
+  background: transparent;            /* Fondo para "romper" el borde y que el texto sea legible */
+  padding: 0 0px;              /* Espacio interno para el título */
+  margin: 0;                    /* Elimina márgenes predeterminados */
+  font-size: 1.2rem;            /* Tamaño de letra, ajustable según convenga */
+  text-color: white;
+  color: white;
+}
+
+.subsections-description {
+  color: white;
+  text-align: left;
+}
+
+
+.grey-border-section-top {
+  position: relative;           /* Permite que los elementos absolutos se posicionen respecto al contenedor */
+  border: 1px solid #ccc;       /* Borde gris */
+  padding: 25px;                /* Espacio interno */
+  margin: 40px;                 /* Espacio externo */
+  border-radius: 4px;
+  top: 35px;
+}
+
+.sentinel {
+  height: 1px;
+  width: 100%;
+  /* Opcional: podrías hacerlo invisible con opacity o display: none, 
+     aunque display: none no funcionará con Intersection Observer */
+  opacity: 0;
+}
+/* Contenedor que envolverá al título. Es importante que tenga position: relative */
+.title-container {
+  position: relative;
+}
+/* Contenedor principal con borde gris */
+.grey-border-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: auto;
+    max-width: 90%;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ajuste automático en dispositivos pequeños */
+@media (max-width: 768px) {
+    .grey-border-section {
+        padding: 15px;
+        max-width: 95%;
+    }
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1024px) {
+    .grey-border-section {
+        max-width: 80%;
+    }
+}
+
+
+/* Estilo para el título: se posiciona absoluto para superponerse al borde superior y se centra horizontalmente */
+.section-two-title {
+  position: absolute;
+  top: -12px; /* Ajusta este valor según el efecto deseado; valores negativos harán que sobresalga */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;       /* Ajusta si deseas un fondo para "romper" el borde */
+  padding: 0 10px;               /* Espacio interno para que el texto no se adhiera directamente al borde */
+  margin: 0;                     /* Elimina márgenes predeterminados */
+  font-size: 1.2rem;             /* Tamaño de letra, ajustable según convenga */
+  color: white;                  /* Color correcto del texto */
+  text-align: center;            /* Centra el contenido del título */
+}/* Contenedor principal para mejorar la experiencia de scroll (opcional) */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+}
+.sections-container {
+  scroll-behavior: smooth;
+}
+
+/* Sección 1: ocupa toda la altura del viewport */
+.section-one {
+  height: 100vh;
+  background-color: #282c34;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Sentinel: elemento invisible que usaremos para detectar el final de la sección */
+.sentinel {
+  height: 1px; /* Un marcador pequeño */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Sección 2: inicialmente oculta */
+.section-t {
+  height: 100vh;
+  background-color: #282c34;
+  padding: 20px;
+  color: #282c34;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Sección 2: inicialmente oculta */
+.section-two {
+  height: 100vh;
+  background-color: #282c34;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.opaque-square-section {
+  background-color: transparent; /* Color opaco (azul metalizado oscuro) */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el texto */
+  align-items: center;     /* Centra verticalmente el texto */
+  padding: 5px;
+  box-sizing: border-box;  /* Incluye el padding en las dimensiones definidas */
+  border-radius: 8px;      /* Opcional: bordes redondeados */
+  opacity: 0.5;
+  border-color: gray;
+  border: 5;
+}
+
+/* El título se posiciona de forma absoluta */
+.section-title {
+  position: absolute;
+  top: 20px;                   /* Se eleva por encima del contenedor (ajusta según el tamaño de fuente) */
+  background: transparent;            /* Fondo para "romper" el borde y que el texto sea legible */
+  padding: 0 0px;              /* Espacio interno para el título */
+  margin: 0;                    /* Elimina márgenes predeterminados */
+  font-size: 1.2rem;            /* Tamaño de letra, ajustable según convenga */
+  text-color: white;
+  color: white;
+}
+
+.subsections-description {
+  color: white;
+  text-align: left;
+}
+
+
+.grey-border-section-top {
+  position: relative;           /* Permite que los elementos absolutos se posicionen respecto al contenedor */
+  border: 1px solid #ccc;       /* Borde gris */
+  padding: 25px;                /* Espacio interno */
+  margin: 40px;                 /* Espacio externo */
+  border-radius: 4px;
+  top: 35px;
+}
+
+.sentinel {
+  height: 1px;
+  width: 100%;
+  /* Opcional: podrías hacerlo invisible con opacity o display: none, 
+     aunque display: none no funcionará con Intersection Observer */
+  opacity: 0;
+}
+/* Contenedor que envolverá al título. Es importante que tenga position: relative */
+.title-container {
+  position: relative;
+}
+/* Contenedor principal con borde gris */
+.grey-border-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: auto;
+    max-width: 90%;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ajuste automático en dispositivos pequeños */
+@media (max-width: 768px) {
+    .grey-border-section {
+        padding: 15px;
+        max-width: 95%;
+    }
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1024px) {
+    .grey-border-section {
+        max-width: 80%;
+    }
+}
+
+
+/* Estilo para el título: se posiciona absoluto para superponerse al borde superior y se centra horizontalmente */
+.section-two-title {
+  position: absolute;
+  top: -12px; /* Ajusta este valor según el efecto deseado; valores negativos harán que sobresalga */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;       /* Ajusta si deseas un fondo para "romper" el borde */
+  padding: 0 10px;               /* Espacio interno para que el texto no se adhiera directamente al borde */
+  margin: 0;                     /* Elimina márgenes predeterminados */
+  font-size: 1.2rem;             /* Tamaño de letra, ajustable según convenga */
+  color: white;                  /* Color correcto del texto */
+  text-align: center;            /* Centra el contenido del título */
+}
+/* Estilos base para la lista de sugerencias */
+.suggestion-list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 9.5vh;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Para Firefox */
+  color: white;
+  background-color: #282c34;
+}
+
+/* Ocultar la scrollbar en navegadores WebKit */
+.suggestion-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilo para cada cuadro (sugerencia) */
+.suggestion-list .suggestion {
+  cursor: pointer;
+  padding: 1.25rem;
+  width: 222px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Centramos el contenido horizontalmente */
+  justify-content: center;   /* Centramos verticalmente */
+  border-radius: 0.75rem;
+  background: #1a1a1a;        /* Fondo más oscuro */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  /* Sombra en la parte superior y en la inferior con mayor intensidad */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.5);
+  scroll-snap-align: center;
+}
+
+/* Efecto hover: fondo aún más negro y sombras más intensas (por arriba y abajo) */
+.suggestion-list .suggestion:hover {
+  background: #000;           /* Fondo aún más oscuro */
+  transform: scale(1.03);
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.7), 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Ajuste de tipografía e íconos */
+.suggestion-list .suggestion :where(.text, .icon) {
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Estilos específicos para el ícono dentro de la sugerencia */
+.suggestion-list .suggestion .icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  align-self: center;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Adaptaciones responsivas para dispositivos móviles */
+@media (max-width: 768px) {
+  .suggestion-list {
+    gap: 1rem;
+    margin-top: 6vh;
+    padding: 0 1rem; /* Evita que los cuadros queden pegados a los bordes */
+  }
+  .suggestion-list .suggestion {
+    width: 80%;
+    padding: 1rem;
+  }
+}
+
+.suggestion-list .suggestion {
+            cursor: pointer;
+            padding: 1.25rem;
+            width: 222px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.75rem;
+            transition: 0.2s ease;
+
+        }
